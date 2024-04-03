@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import Form from './Form';
+import StudentCard from './StudentCard';
 
-function App() {
+const App = () => {
+  const [studentData, setStudentData] = useState(null);
+  const [showForm, setShowForm] = useState(true);
+
+  const handleSubmit = (data) => {
+    setStudentData(data);
+    setShowForm(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            {showForm && <Form onSubmit={handleSubmit} />}
+            {!showForm && studentData && <StudentCard data={studentData} />}
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
