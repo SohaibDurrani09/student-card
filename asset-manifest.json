@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/student-card/static/css/main.6a29a989.css",
+    "main.js": "/student-card/static/js/main.57f51210.js",
+    "static/js/453.2d7e8e15.chunk.js": "/student-card/static/js/453.2d7e8e15.chunk.js",
+    "static/media/Unilogo.png": "/student-card/static/media/Unilogo.1528aeeb4fdccb5aa423.png",
+    "static/media/card-bg.PNG": "/student-card/static/media/card-bg.d0899aae693949ab9980.PNG",
+    "static/media/barcode.png": "/student-card/static/media/barcode.0ca51141d242e058fd4b.png",
+    "index.html": "/student-card/index.html",
+    "main.6a29a989.css.map": "/student-card/static/css/main.6a29a989.css.map",
+    "main.57f51210.js.map": "/student-card/static/js/main.57f51210.js.map",
+    "453.2d7e8e15.chunk.js.map": "/student-card/static/js/453.2d7e8e15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a29a989.css",
+    "static/js/main.57f51210.js"
+  ]
+}
